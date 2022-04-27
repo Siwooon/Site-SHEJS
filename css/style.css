@@ -164,8 +164,14 @@ b:hover, b:active, b:focus {
 .timeline-img-header {
   height: 200px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
+.timeline-img-header2 {
+  height: 200px;
+  position: relative;
+  margin-bottom: 0;
+}
+
 .timeline-img-header h2 {
   color: #FFFFFF;
   position: absolute;

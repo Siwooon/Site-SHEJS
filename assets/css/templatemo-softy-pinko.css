@@ -101,6 +101,12 @@ ul {
   margin-bottom: 0px;
 }
 
+h2 span {
+  color : #f7921e;
+  font-size: 28px;
+
+}
+
 /*
 ---------------------------------------------
 global styles
@@ -124,7 +130,7 @@ body {
 
 .section {
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -162,14 +168,42 @@ body {
   position: relative;
 }
 
+.left-heading .section-title2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #f7921e;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
 .center-heading {
   text-align: center;
 }
 
 .center-heading .section-title {
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 30px;
   color: #1e1e1e;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.center-heading .section-title3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: red;
+  letter-spacing: 1.75px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.center-heading .section-title4 {
+  font-weight: 600;
+  font-size: 30px;
+  color: green;
   letter-spacing: 1.75px;
   line-height: 38px;
   margin-bottom: 20px;
@@ -253,6 +287,10 @@ body {
 .align-self-center {
   -ms-flex-item-align: center !important;
   align-self: center !important;
+}
+
+.align-self-right {
+  float: right;
 }
 
 .align-self-bottom {
@@ -913,8 +951,8 @@ parallax & home seperator
 
 .mini .mini-content .info h1 {
   color: #fff;
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 30px;
   letter-spacing: 0.25px;
   margin-bottom: 30px;
 }
@@ -946,6 +984,8 @@ parallax & home seperator
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 
 .mini .mini-content .mini-box:hover {
@@ -1412,7 +1452,7 @@ contact
 */
 
 #contact-us {
-  padding: 160px 0px;
+  padding: 100px 0px;
 }
 
 #contact-us h5 {
@@ -1464,7 +1504,7 @@ footer
 ---------------------------------------------
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(127deg, #f8b375 0%, #f05a23 91%);
   padding-top: 30px;
 }
 
