@@ -1,0 +1,219 @@
+
+header q {
+  font-family: 'Allura';
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  background: #f8b375;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #f05a23;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+b {
+  background: #3F51B5;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+b:hover, b:active, b:focus {
+  background: #32408f;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card q {
+  padding: 0 20px;
+}
+.timeline-card b {
+  margin-left: 20px;
+}
+/* pas obligé, tu peux mettre le chemin relatif de ton projet */
+/* Je te le fais a la fin si tu y arrives pas */
+/* mettre du padding (espace) jamais d'la vie tu vois pas de quoi je parle */
+/* Ouai ca a aucun sens jsp pq ils ont fait ca */
+/* Bref t'as capté ? */
+.timeline-item:nth-child(1) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pic.clubic.com/v1/images/1819493/raw?fit=max&width=1200&hash=8d30521c7c9ee198a0ca2eba234041fe19cef73c") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://cap.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcap.2F2017.2F10.2F04.2Fe6529f6e-8af1-4892-80b9-67bb7be31be4.2Ejpeg/1200x630/background-color/ffffff/quality/70/spoutnik-a-60-ans-ma-journee-sans-satellites-1247928.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(3) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/f/3/ef3bf45e68_50151667_homme-marche-lune.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(4) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mars3_iki.jpg/290px-Mars3_iki.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(5) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://www.cite-espace.com/content/uploads/2016/07/viking1.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(6) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://images.bfmtv.com/QpeDRVnpugC9fM-wGQjeTVBjycU=/0x0:3840x2160/640x0/images/Blue-Origin-466506.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(7) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://www.challenges.fr/assets/img/2014/12/02/cover-r4x3w1000-578d72c52ae49-elon-musk-patron-de-spacex-nouveau-concurrent-d-ariane.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(8) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://static.lexpress.fr/medias_12247/w_640,h_358,c_fill,g_center/v1615025429/perseverance-au-travail_6270468.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(9) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://i.la-croix.com/1400x933/smart/2017/08/01/1200866911/robot-Curiosity-5-2015_0.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(10) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://trustmyscience.com/wp-content/uploads/2022/03/date-premiers-pas-homme-sur-Mars-couv.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(11) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://jam-free-time.s3.amazonaws.com/uploads/stories/main_image/913/humars.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(12) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://images.radio-canada.ca/q_auto,w_960/v1/ici-info/16x9/mars-colonisation-humaine-illustration.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #3F51B5;
+  padding: 0 20px;
+}
+
+.date {
+    background: orange;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
